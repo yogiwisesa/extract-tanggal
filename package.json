@@ -1,0 +1,18 @@
+{
+  "name": "extract-tanggal",
+  "version": "1.0.0",
+  "description": "extract tanggal dari string.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "ava --verbose"
+  },
+  "author": "Yogi Wisesa <yogiwisesa@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.22.2"
+  },
+  "devDependencies": {
+    "ava": "1.0.0-rc.1"
+  }
+}
