@@ -17,3 +17,9 @@ Package ini mengenali bulan dalam bahasa Indonesia & Inggris beserta dengan sing
 
 ### Install
 ```npm i extract-tanggal```
+
+```
+const extract = require('extract-tanggal')
+
+console.log(extract('besok rapat 18 agustus 2018'))
+```

@@ -1,5 +1,5 @@
 import test from 'ava';
-import extractDate from '../src/app'
+import extractYu from '../src/app'
 
 
 test('return extracted date and original word, given English string', t => {
@@ -8,7 +8,7 @@ test('return extracted date and original word, given English string', t => {
 		DateWord: "20 october '18",
     DateExtracted: '2018-10-20'
 	}
-	const result = extractDate(text)
+	const result = extractYu(text)
 
 	t.deepEqual(result, expect)
 })
@@ -19,7 +19,7 @@ test('return extracted date and original word, given English string with month i
 		DateWord: '20 oct 2018',
     DateExtracted: '2018-10-20'
 	}
-	const result = extractDate(text)
+	const result = extractYu(text)
 
 	t.deepEqual(result, expect)
 })
@@ -30,7 +30,7 @@ test('return extracted date and original word, given Indonesian string', t => {
 		DateWord: '20 oktober 2018',
     DateExtracted: '2018-10-20'
 	}
-	const result = extractDate(text)
+	const result = extractYu(text)
 
 	t.deepEqual(result, expect)
 })
@@ -41,7 +41,7 @@ test('return extracted date and original word, given Indonesian string with mont
 		DateWord: '20 agu 2018',
     DateExtracted: '2018-08-20'
 	}
-	const result = extractDate(text)
+	const result = extractYu(text)
 
 	t.deepEqual(result, expect)
 })
@@ -52,7 +52,7 @@ test('return extracted date and original word, given Indonesian string with year
 		DateWord: "20 mei '18",
     DateExtracted: '2018-05-20'
 	}
-	const result = extractDate(text)
+	const result = extractYu(text)
 
 	t.deepEqual(result, expect)
 })
