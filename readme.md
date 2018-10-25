@@ -21,5 +21,5 @@ Package ini mengenali bulan dalam bahasa Indonesia & Inggris beserta dengan sing
 ```
 const extract = require('extract-tanggal')
 
-console.log(extract('besok rapat 18 agustus 2018'))
+console.log(extract('rapat 18 agustus 2018'))
 ```
